@@ -1,3 +1,5 @@
-# duyetdev-research-site
+# Me at Duyetdev
 
-Public at http://research.duyetdev.com
+Public at http://me.duyetdev.com
+
+Email: me(a)duyetdev.com
