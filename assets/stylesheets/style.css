@@ -12,7 +12,7 @@
 @font-face {
     font-family: "WeblySleek UI";
     src: url("../fonts/ws-ui.eot");
-    src: local('WeblySleek UI Regular'), url("../fonts/weblysleekuil.woff") format("woff");
+    src: local('WeblySleek UI Regular'), url("../fonts/ws-ui.eot") format("woff");
     font-weight: 400;
 }
 @font-face {
