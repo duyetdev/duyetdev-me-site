@@ -1,4 +1,10 @@
 /*-------------------------------------------------*/
+/* =  App config
+/*-------------------------------------------------*/
+window.duyetdevConfig = window.duyetdevConfig || {};
+window.duyetdevConfig.instagramClientId = '8b9b2f3dfbaf403497ea3379c424b9ed';
+
+/*-------------------------------------------------*/
 /* =  Full-window section
 /*-------------------------------------------------*/
 
