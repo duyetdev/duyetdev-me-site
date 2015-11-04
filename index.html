@@ -48,7 +48,25 @@
                             <a class="features-txt animated fadeInRight wow animated" data-wow-delay=".6s" href="https://github.com/duyetdev"> <i class="fa fa-github"></i> github</a> &nbsp;&nbsp;
                             <a class="features-txt animated fadeInRight wow animated" data-wow-delay=".7s" href="https://www.linkedin.com/in/duyetdev"> <i class="fa fa-linkedin-square"></i> linkedin</a> &nbsp;&nbsp;
                             <a class="features-txt animated fadeInRight wow animated" data-wow-delay=".9s" href="http://blog.duyetdev.com"> <i class="fa fa-code"></i> blog</a> &nbsp;&nbsp;
-                            <a class="features-txt animated fadeInRight wow animated" data-wow-delay=".9s" href="mail:me@duyetdev.com"><i class="fa fa-inbox"></i> me@duyetdev.com</a>
+                            <script>
+                                { coded = "N6@Dw56ZD6o.FLN"
+                                  key = "FxVtg89odQnTA21jufZsyBLDmik3PCEwlaW5reMN07OXhS4czYJK6HvRbIUqpG"
+                                  shift=coded.length
+                                  link=""
+                                  for (i=0; i<coded.length; i++) {
+                                    if (key.indexOf(coded.charAt(i))==-1) {
+                                      ltr = coded.charAt(i)
+                                      link += (ltr)
+                                    }
+                                    else {     
+                                      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                                      link += (key.charAt(ltr))
+                                    }
+                                  }
+                                  var mail = 'me' + '@' + 'duyetdev.com';
+                                document.write("<a class='features-txt animated fadeInRight wow animated' href='mailto:"+link+"'><i class=\"fa fa-inbox\"></i> "+ mail +"</a>")
+                                }
+                            </script>
                         </p>
                     </div>
                 </div>
