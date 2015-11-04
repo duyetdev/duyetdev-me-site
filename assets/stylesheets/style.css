@@ -930,3 +930,10 @@ a {
         padding: 0px 0px 50px 30px !important;
     }
 }
+
+.available-for-hire {
+   font-size: 13px;
+   font-weight: 300;
+   text-transform: uppercase;
+   color: #D8D8D8;
+}
