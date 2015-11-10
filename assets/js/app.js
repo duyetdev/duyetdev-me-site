@@ -24,3 +24,14 @@ $(window).load(function() {
 	$('.status').fadeOut();
 	$('.preloader').delay(350).fadeOut('slow');
 });
+
+/* ==============================================
+Github project
+=============================================== */
+
+var render_project_datatable = function(github) {
+	if (!github) return false;
+	$('#github').DataTable({
+		data: github.data
+	});
+}
