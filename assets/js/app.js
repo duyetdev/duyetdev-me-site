@@ -40,6 +40,7 @@ function render_project_datatable(github) {
 			{"data": "clone_url"}
 		],
 		"fnRowCallback": function( nRow, aData, iDisplayIndex ) {
+			console.log(aData)
 			$('td:eq(0)', nRow).html('<a href="' + aData[3] + '"><strong>' + aData[0] + '</strong></a>');
 			return nRow;
 		},
