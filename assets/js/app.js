@@ -32,6 +32,12 @@ Github project
 function render_project_datatable(github) {
 	if (!github) return false;
 	$('#github').DataTable({
-		data: github.data
+		data: github.data,
+		"columns": [
+			"data": "name",
+			"data": "description",
+			"data": "language",
+			"data": "clone_url"
+		]
 	});
 }
