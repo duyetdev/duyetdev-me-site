@@ -29,9 +29,9 @@ $(window).load(function() {
 Github project
 =============================================== */
 
-function render_project_datatable(github) {
+function render_project_datatable(table_id, github) {
 	if (!github) return false;
-	$('#github').DataTable({
+	$(table_id || '#github').DataTable({
 		"data": github.data,
 		"columns": [
 			{"data": "name"},
@@ -48,4 +48,26 @@ function render_project_datatable(github) {
 		"info": false,
 		"paging": false
 	});
+}
+
+function render_project_datatable_1(github) {
+	return render_project_datatable('#github_1', github);
+}
+function render_project_datatable_1(github) {
+	return render_project_datatable('#github_1', github);
+}
+function render_project_datatable_1(github) {
+	return render_project_datatable('#github_1', github);
+}
+function render_project_datatable_1(github) {
+	return render_project_datatable('#github_1', github);
+}
+function render_project_datatable_1(github) {
+	return render_project_datatable('#github_1', github);
+}
+function render_project_datatable_1(github) {
+	return render_project_datatable('#github_1', github);
+}
+function render_project_datatable_1(github) {
+	return render_project_datatable('#github_1', github);
 }
