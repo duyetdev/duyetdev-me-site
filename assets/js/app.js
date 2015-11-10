@@ -40,13 +40,13 @@ function render_project_datatable(table_id, github) {
 			{"data": "clone_url"}
 		],
 		"fnRowCallback": function( nRow, aData, iDisplayIndex ) {
-			console.log(aData)
 			$('td:eq(0)', nRow).html('<a href="' + aData.html_url + '"><strong>' + aData.name + '</strong></a>');
 			$('td:eq(3)', nRow).html('<a href="' + aData.html_url + '">' + aData.git_url + '</a>');
 			return nRow;
 		},
 		"info": false,
-		"paging": false
+		"paging": false,
+		"bFilter": false
 	});
 }
 
