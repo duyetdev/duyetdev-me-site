@@ -41,7 +41,8 @@ function render_project_datatable(github) {
 		],
 		"fnRowCallback": function( nRow, aData, iDisplayIndex ) {
 			console.log(aData)
-			$('td:eq(0)', nRow).html('<a href="' + aData[3] + '"><strong>' + aData[0] + '</strong></a>');
+			$('td:eq(0)', nRow).html('<a href="' + aData.html_url + '"><strong>' + aData.name + '</strong></a>');
+			$('td:eq(3)', nRow).html('<a href="' + aData.html_url + '">' + aData.git_url + '</a>');
 			return nRow;
 		},
 		"info": false,
