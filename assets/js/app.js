@@ -34,10 +34,10 @@ function render_project_datatable(github) {
 	$('#github').DataTable({
 		data: github.data,
 		"columns": [
-			"data": "name",
-			"data": "description",
-			"data": "language",
-			"data": "clone_url"
+			{"data": "name"},
+			{"data": "description"},
+			{"data": "language"},
+			{"data": "clone_url"}
 		]
 	});
 }
