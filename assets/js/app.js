@@ -29,7 +29,7 @@ $(window).load(function() {
 Github project
 =============================================== */
 
-window.render_project_datatable = function(github) {
+function render_project_datatable(github) {
 	if (!github) return false;
 	$('#github').DataTable({
 		data: github.data
