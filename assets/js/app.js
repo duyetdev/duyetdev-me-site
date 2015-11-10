@@ -39,6 +39,10 @@ function render_project_datatable(github) {
 			{"data": "language"},
 			{"data": "clone_url"}
 		],
+		"fnRowCallback": function( nRow, aData, iDisplayIndex ) {
+			$('td:eq(0)', nRow).html('<a href="' + aData[3] + '"><strong>' + aData[0] + '</strong></a>');
+			return nRow;
+		},
 		"info": false,
 		"paging": false
 	});
