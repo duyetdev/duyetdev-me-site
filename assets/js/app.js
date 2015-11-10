@@ -38,6 +38,7 @@ function render_project_datatable(github) {
 			{"data": "description"},
 			{"data": "language"},
 			{"data": "clone_url"}
-		]
+		],
+		"info": false
 	});
 }
