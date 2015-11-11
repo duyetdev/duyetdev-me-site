@@ -43,7 +43,7 @@ function render_project_datatable(table_id, github) {
 		"fnRowCallback": function( nRow, aData, iDisplayIndex ) {
 			$('td:eq(0)', nRow).html('<a href="' + aData.html_url + '"><strong>' + aData.name + '</strong></a>');
 			$('td:eq(3)', nRow).html('<a href="' + aData.html_url + '">' + aData.git_url + '</a>');
-			$('td:eq(4)', nRow).html('<iframe src="https://ghbtns.com/github-btn.html?user='+ aData.owner.login +'&repo='+ aData.name +'&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>');
+			$('td:eq(4)', nRow).html('<iframe src="https://ghbtns.com/github-btn.html?user='+ aData.owner.login +'&repo='+ aData.name +'&type=star&count=true" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>');
 			return nRow;
 		},
 		"info": false,
