@@ -78,15 +78,28 @@ function render_project_datatable_8(github) {
 }
 
 /* Lasted blogs */
-$(document).ready(function(){
-       $.ajax({
-        type: "GET" ,
-        url: "https://www.blogger.com/feeds/3454518094181460838/posts/default",
-        dataType: "xml" ,
-        success: function(xml) {
-	        $(xml).find('entry').each(function(){
-	           $("#lasted").append($(this).text());
-	        })
-        }
-    });
-});
+function duyetdevRelatedPost(xml) {
+	var limit = -1;
+	var utm_query = 'utm_source=duyetdev-me-site&utm_medium=link&utm_campaign=from-me-site-tracker';
+
+	var _ul = $('<ul></ul>');
+
+	var _i = 0;
+	$(xml).find('entry').each(function(){
+		if (_i >= limit && limit > 0) return;
+		_i++;
+
+		var _a = $('<a></a>');
+
+		var title = $(this).find('title').eq(0).text();
+		var link = $(this).find('link[rel=\'alternate\']').attr('href');
+		
+		_a.html(title);
+		_a.attr('href', link + '?' + utm_query);
+		_a.attr('title', title);
+
+		_ul.append($('<li></li>').html(_a));
+	});
+
+	$("#lasted").html(_ul);	
+}
