@@ -76,3 +76,17 @@ function render_project_datatable_7(github) {
 function render_project_datatable_8(github) {
 	return render_project_datatable('#github_8', github);
 }
+
+/* Lasted blogs */
+$(document).ready(function(){
+       $.ajax({
+        type: "GET" ,
+        url: "https://www.blogger.com/feeds/3454518094181460838/posts/default",
+        dataType: "xml" ,
+        success: function(xml) {
+	        $(xml).find('entry').each(function(){
+	           $("#lasted").append($(this).text());
+	        })
+        }
+    });
+});
