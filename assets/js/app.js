@@ -87,8 +87,7 @@ function duyetdevRelatedPost(xml) {
 	var _i = 0;
 	$(xml).find('entry').each(function(){
 		if (_i >= limit && limit > 0) return;
-		_i++;
-
+		
 		var _a = $('<a></a>');
 
 		var title = $(this).find('title').eq(0).text();
@@ -100,6 +99,7 @@ function duyetdevRelatedPost(xml) {
 			_a.attr('title', title);
 
 			_ul.append($('<li></li>').html(_a));	
+			_i++;
 		}
 	});
 
