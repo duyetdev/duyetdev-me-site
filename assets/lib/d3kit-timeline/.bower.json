@@ -1,0 +1,47 @@
+{
+  "name": "d3kit-timeline",
+  "description": "A timeline component based on d3kit and labella.js",
+  "homepage": "https://github.com/kristw/d3kit-timeline",
+  "main": "dist/d3kit-timeline.min.js",
+  "authors": [
+    "Krist Wongsuphasawat <krist.wongz@gmail.com> (http://kristw.yellowpigz.com)"
+  ],
+  "license": "Apache 2",
+  "keywords": [
+    "d3kit-timeline",
+    "d3kit"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src",
+    "examples",
+    "docs",
+    "gruntFile.js",
+    "grunt/*.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "d3kit": "~1.0.9",
+    "labella": "~0.1.1"
+  },
+  "version": "0.4.0",
+  "_release": "0.4.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.4.0",
+    "commit": "b02da814225a5b31b882574f7060f38e8597101f"
+  },
+  "_source": "git://github.com/kristw/d3kit-timeline.git",
+  "_target": "~0.4.0",
+  "_originalSource": "d3kit-timeline",
+  "_direct": true
+}
