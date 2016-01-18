@@ -94,11 +94,13 @@ function duyetdevRelatedPost(xml) {
 		var title = $(this).find('title').eq(0).text();
 		var link = $(this).find('link[rel=\'alternate\']').attr('href');
 		
-		_a.html(title);
-		_a.attr('href', link + '?' + utm_query);
-		_a.attr('title', title);
+		if (link && link != undefined) {
+			_a.html(title);
+			_a.attr('href', link + '?' + utm_query);
+			_a.attr('title', title);
 
-		_ul.append($('<li></li>').html(_a));
+			_ul.append($('<li></li>').html(_a));	
+		}
 	});
 
 	$("#lasted").html(_ul);	
