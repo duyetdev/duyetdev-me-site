@@ -612,3 +612,17 @@ width:110px;
     color:#ffffff;
     color:rgba(0, 0, 0, 0.4);
 }
+
+ /* No script ======================= */
+ #noscript {
+    background-color: #FF9800;
+    color: #FFF;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 6px;
+    margin: 0;
+    z-index: 999999;
+ }
