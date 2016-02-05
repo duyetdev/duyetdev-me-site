@@ -41,7 +41,7 @@
                         Van-Duyet Le
                         </h1>
                         <p style="line-height: 1.4;">
-                            Full-Stack Developer - I am passion about building awesome products, also rock in Javascript, Nodejs and Machine Learning.
+                            Full-Stack Developer, Information System - I am passion about building awesome products, also rock in Javascript, Nodejs and Machine Learning.
                         </p>
                         <p>
                             Vietnamese: <strong>Lê Văn Duyệt</strong>
@@ -66,10 +66,10 @@
                 <div class="col-xs-12 col-md-4 col-md-offset-1">
                     <h3>Skills</h3>
                     <p>
-                        <div class="skillbar clearfix" data-percent="70%">
+                        <div class="skillbar clearfix" data-percent="78%">
                             <div class="skillbar-title" style="background: #2980b9;"><span>Nodejs</span></div>
                             <div class="skillbar-bar" style="background: #3498db;"></div>
-                            <div class="skill-bar-percent">70%</div>
+                            <div class="skill-bar-percent">78%</div>
                         </div>
                         <div class="skillbar clearfix " data-percent="85%">
                             <div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
@@ -86,12 +86,12 @@
                             <div class="skillbar-bar" style="background: #2c3e50;"></div>
                             <div class="skill-bar-percent">60%</div>
                         </div>
-                        <!--                         <div class="skillbar clearfix " data-percent="100%">
-                            <div class="skillbar-title" style="background: #27ae60;"><span>SEO</span></div>
+                        <div class="skillbar clearfix " data-percent="80%">
+                            <div class="skillbar-title" style="background: #27ae60;"><span>SQL, noSQL</span></div>
                             <div class="skillbar-bar" style="background: #2ecc71;"></div>
-                            <div class="skill-bar-percent">100%</div>
+                            <div class="skill-bar-percent">80%</div>
                         </div>
-
+                        <!--
                         <div class="skillbar clearfix " data-percent="70%">
                             <div class="skillbar-title" style="background: #124e8c;"><span>Photoshop</span></div>
                             <div class="skillbar-bar" style="background: #4288d0;"></div>
@@ -109,8 +109,8 @@
                             <li>Tuong lai xanh</li>
                         </ul>
                     </p>
-                    <h3>Keyworks</h3>
-                    <p id="keywords_list"></p>
+                    <h3 title="Technology that I working for">Keyworks</h3>
+                    I'm working for : <p id="keywords_list"></p>
                 </div>
                 <div class="col-xs-12 col-md-3">
                     <h3>Languages</h3>
@@ -139,6 +139,11 @@
                             <a href="http://bda.com.vn">Bgate Network - Self-serve ad platform for marketing - bda.com.vn</a> (2015)
                             <br />
                             <p>BDA Programmatic System for Advertisers</p>
+                        </li>
+                        <li>
+                            <a href="http://onion.city">Onion.City</a> (2015)
+                            <br />
+                            <p>Deep-web indexes, enabling search and global access to Tor's onionsites</p>
                         </li>
                         <li>
                             <a href="https://github.com/duyetdev/bruteforce-database">Bruteforce Database</a> (11/2015)
@@ -186,6 +191,12 @@
                         </li>
                         <li>...</li>
                     </ul>
+
+                    <h3>Publications</h3>
+                    <ul>
+                    	<li>Van-Duyet Le, Nguyen Tran, Ph.D Hung Ngo, Đánh giá sản phẩm điện tử dựa trên nhận xét của người dùng trên internet. (<a href="https://me.duyetdev.com/publications/drives/danh-gia-san-phan-cong-nghe-duyetdev-26-10-2015.pdf">2015</a>) </li>
+                    	<li>Van De, Nguyen, Nguyen Vu Trung, and Jong-Yil Chai Le Van Duyet. "Molecular diagnosis of an ocular toxocariasis patient in Vietnam." The Korean journal of parasitology 51.5 (2013): 563 <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3857505/">ncbi.nlm.nih.gov</a>.
+                    </ul>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-3">
                     <h3>Talks</h3>                    
@@ -232,7 +243,9 @@
     var keywords = [
         'Nodejs', 'React', 'php', 'SVM', 'Javascript', 'Yii', 'Ionic', 
         'Native Bayes', 'Odoo', 'Koa.js', 'Express.js', 'MongoDB', 
-        'CouchDB', 'MySQL', 'Crawler', 'Spark', 'Tensorflow'
+        'CouchDB', 'MySQL', 'Crawler', 'Spark', 'Tensorflow', 'Python', 'Pandas',
+        'Tokenizer', 'Wordnet', 'Deep-web'
+
     ];
     var keywords_link = [];
     for (var i in keywords) {
@@ -244,7 +257,7 @@
     var talks = [
         {title: 'Introduce about Nodejs', url: 'http://www.slideshare.net/yplitgroup/introduce-about-nodejs-duyetdevcom', description: 'Introduce about Nodejs - duyetdev.com', img: '../assets/images/introduce-about-nodejs-duyetdev.jpg'},
         {title: 'All about the Prediction.io - ISLab 30/09/2015', url: 'https://intro-prediction.duyetdev.com', description: 'Introduction Prediction.io - DASE architecture', img: '../assets/images/prediction-intro-duyetdev.png'},
-        {title: 'Opinion Mining in product review', url: 'http://image-store.slidesharecdn.com/1a9839d4-0adb-461a-b81f-e59ae7198f2b-large.jpeg', description: '', img: '../assets/images/opinion-mining-in-product-review.jpeg'},
+        {title: 'Opinion Mining in product reviews', url: 'http://image-store.slidesharecdn.com/1a9839d4-0adb-461a-b81f-e59ae7198f2b-large.jpeg', description: '', img: '../assets/images/opinion-mining-in-product-review.jpeg'},
     ];
     var talks_box = [];
     for (var i in talks) {
