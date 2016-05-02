@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500&subset=latin,vietnamese,latin-ext);
+
 /*========= Custom Font =========*/
 
 @font-face {
@@ -25,13 +27,18 @@
 /*======= Reset ======== */
 
 body {
-    font-family: 'WeblySleek UI', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 400;
+    /*font-family: 'WeblySleek UI', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     color: #4c5667;
     background: #fff;
     font-size: 14px;
     line-height: 22px;
     overflow-x: hidden;
+}
+
+a {
+    color: #0079d1;
 }
 
 a:hover,
@@ -625,4 +632,22 @@ width:110px;
     padding: 6px;
     margin: 0;
     z-index: 999999;
+ }
+
+ .icon-list {
+    list-style: none;
+ }
+
+ .icon-list li {
+    list-style: none;
+    line-height: 1px;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: auto;
+ }
+
+ .icon-list img {
+    width: 56px;
  }
