@@ -3976,7 +3976,7 @@ header {
     margin: auto;
     margin-bottom: 1.5rem;
     background-image: url("../icon/icons.svg");
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
 }
 
 .icon-twitter,
@@ -3984,6 +3984,9 @@ header {
 .icon-github,
 .icon-travis,
 .icon-leveldb,
+.icon-linkedin,
+.icon-messenger,
+.icon-blogger,
 .icon-saucelabs {
     opacity: .75
 }
@@ -3993,6 +3996,9 @@ header {
 .icon-github:hover,
 .icon-travis:hover,
 .icon-leveldb:hover,
+.icon-linkedin:hover,
+.icon-messenger:hover,
+.icon-blogger:hover,
 .icon-saucelabs:hover {
     opacity: 1
 }
@@ -4022,9 +4028,10 @@ header {
 }
 
 .icon-twitter {
-    background-position: -388px -24px;
-    width: 46px;
-    height: 39px
+    background-image: url("../icon/Twitter-color.svg");
+    width: 47px;
+    height: 40px;
+    background-size: 100%;
 }
 
 .icon-couchdb {
@@ -4034,9 +4041,31 @@ header {
 }
 
 .icon-github {
-    background-position: -537px -22px;
-    width: 45px;
-    height: 43px
+    background-image: url("../icon/github-black.svg");
+    width: 43px;
+    height: 43px;
+    background-size: 100%;
+}
+
+.icon-linkedin {
+    background-image: url("../icon/LinkedIn-color.svg");
+    width: 43px;
+    height: 43px;
+    background-size: 100%;
+}
+
+.icon-blogger {
+    background-image: url("../icon/Blogger-color.svg");
+    width: 43px;
+    height: 43px;
+    background-size: 100%;
+}
+
+.icon-messenger {
+    background-image: url("../icon/Messenger-color.svg");
+    width: 43px;
+    height: 43px;
+    background-size: 100%;
 }
 
 .icon-travis {
