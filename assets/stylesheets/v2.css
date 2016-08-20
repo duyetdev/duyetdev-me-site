@@ -3986,6 +3986,7 @@ header {
 .icon-leveldb,
 .icon-linkedin,
 .icon-messenger,
+.icon-instagram,
 .icon-blogger,
 .icon-saucelabs {
     opacity: .75
@@ -3998,6 +3999,7 @@ header {
 .icon-leveldb:hover,
 .icon-linkedin:hover,
 .icon-messenger:hover,
+.icon-instagram:hover,
 .icon-blogger:hover,
 .icon-saucelabs:hover {
     opacity: 1
@@ -4063,6 +4065,13 @@ header {
 
 .icon-messenger {
     background-image: url("../icon/Messenger-color.svg");
+    width: 43px;
+    height: 43px;
+    background-size: 100%;
+}
+
+.icon-instagram {
+    background-image: url("../icon/Instagram-black.svg");
     width: 43px;
     height: 43px;
     background-size: 100%;
