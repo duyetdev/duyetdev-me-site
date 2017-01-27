@@ -514,7 +514,7 @@ a.text-warning:hover {
 }
 
 .text-danger {
-    color: #a94442
+    color: #00838f
 }
 
 a.text-danger:hover {
@@ -3277,7 +3277,7 @@ fieldset[disabled] .btn-danger.active {
 }
 
 .btn-link {
-    color: #fa3649;
+    color: #00838f;
     font-weight: normal;
     cursor: pointer;
     border-radius: 0
