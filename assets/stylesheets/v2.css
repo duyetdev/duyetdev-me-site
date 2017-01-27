@@ -2623,7 +2623,11 @@ table th[class*="col-"] {
 .nav>li>a {
     position: relative;
     display: block;
-    padding: 10px 15px
+    padding: 10px 15px;
+    font-family: 'Open Sans',sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 17px;
 }
 
 .nav>li>a:hover,
