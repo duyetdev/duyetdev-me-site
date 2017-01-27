@@ -58,13 +58,13 @@
             </a>
             <ul class='nav nav-header nav-pills' role="navigation">
                 <li>
-                    <a class='btn btn-link btn-lg' href="/resume">Resume</a>
+                    <a class='btn btn-link btn-lg' onclick="ga('send', 'event', 'track_mesite_nav', 'click_cv', 'me.duyetdev.com')"  href="/resume">Resume</a>
                 </li>
                 <li>
-                    <a class='btn btn-link btn-lg' href="https://blog.duyetdev.com">Blog</a>
+                    <a class='btn btn-link btn-lg' onclick="ga('send', 'event', 'track_mesite_nav', 'click_blog', 'me.duyetdev.com')" href="https://blog.duyetdev.com">Blog</a>
                 </li>
                 <li>
-                    <a class='btn btn-link btn-lg' href="http://sitemap.duyetdev.com">Sitemap</a>
+                    <a class='btn btn-link btn-lg' onclick="ga('send', 'event', 'track_mesite_nav', 'click_sitemap', 'me.duyetdev.com')" href="http://sitemap.duyetdev.com">Sitemap</a>
                 </li>
                 <!-- <li>
                     <a class='btn btn-primary btn-lg' href="/available-for-hire.html">available for hire</a>
@@ -84,18 +84,33 @@
                             <p>University of Information Technology - Vietnam National University. </p>
                             <p>
                                 [
-                                <a class="features-txt" href="resume/index.html"> <span class="lnr lnr-briefcase"></span> resume</a>, <a class="features-txt" href="/resume/resume-duyetdev-08082016.pdf"><span class="lnr lnr-license"></span> CV.pdf</a> ] [
-                                <a class="features-txt" href="https://github.com/duyetdev"> <span class="lnr lnr-code"></span> project</a> ] [
-                                <a class="features-txt" href="publications/index.html"> <span class="lnr lnr-briefcase"></span> publications</a> ]
+                                <a class="features-txt" href="resume/index.html" onclick="ga('send', 'event', 'track_mesite_intro', 'click_resume', 'me.duyetdev.com')"> <span class="lnr lnr-briefcase"></span> resume</a>, <a class="features-txt" href="/resume/resume-duyetdev-08082016.pdf"><span class="lnr lnr-license"></span> CV.pdf</a> ] [
+                                <a class="features-txt" href="https://github.com/duyetdev" onclick="ga('send', 'event', 'track_mesite_intro', 'click_github', 'me.duyetdev.com')"> <span class="lnr lnr-code"></span> project</a> ] [
+                                <a class="features-txt" href="publications/index.html" onclick="ga('send', 'event', 'track_mesite_intro', 'click_publication', 'me.duyetdev.com')"> <span class="lnr lnr-briefcase"></span> publications</a> ]
                             </p>
                             <p>
                                 <!-- Lastest new project -->
-                                <a href="http://demo.duyetdev.com" target="_blank" style="color:red; font-weight:700">Checkout new demo.duyetdev.com!</a>
+                                <a href="http://demo.duyetdev.com" onclick="ga('send', 'event', 'track_mesite', 'click_demo.duyetdev.com', 'me.duyetdev.com')" target="_blank" style="color:red; font-weight:700">Checkout new demo.duyetdev.com!</a>
                             </p>
                             <!-- <a href="https://blog.duyetdev.com" class="btn btn-primary btn-lg btn-block-xs">Learn more</a> -->
                     </div>
                     <div class='col-sm-6'>
-                        <figure class="highlight"><pre>import { CV } from 'duyetdev-core';
+                        <figure class="highlight"><pre><span style='color:#e66170; font-weight:bold; '>import</span> <span style='color:#b060b0; '>{</span> CV <span style='color:#b060b0; '>}</span> from <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>duyetdev-core</span><span style='color:#02d045; '>'</span><span style='color:#b060b0; '>;</span>
+
+<span style='color:#e66170; font-weight:bold; '>const</span> profile <span style='color:#d2cd86; '>=</span> <span style='color:#b060b0; '>{</span>
+    name <span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>Van-Duyet Le</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>,</span>
+    email <span style='color:#b060b0; '>:</span> <span style='color:#d2cd86; '>[</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>me</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>,</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>duyetdev.com</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>]</span><span style='color:#d2cd86; '>.</span><span style='color:#e66170; font-weight:bold; '>join</span><span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>@</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>,</span>
+    phone<span style='color:#b060b0; '>:</span> `<span style='color:#008c00; '>0</span>$<span style='color:#b060b0; '>{</span><span style='color:#008c00; '>1662626000</span> <span style='color:#d2cd86; '>+</span> <span style='color:#008c00; '>9</span><span style='color:#b060b0; '>}</span>`
+<span style='color:#b060b0; '>}</span><span style='color:#b060b0; '>;</span>
+
+CV<span style='color:#d2cd86; '>(</span>profile<span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>then<span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#d2cd86; '>=</span><span style='color:#d2cd86; '>></span> <span style='color:#b060b0; '>{</span>
+    console<span style='color:#d2cd86; '>.</span>error<span style='color:#d2cd86; '>(</span>`not available <span style='color:#e66170; font-weight:bold; '>for</span> hire!`<span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+    console<span style='color:#d2cd86; '>.</span><span style='color:#e66170; font-weight:bold; '>log</span><span style='color:#d2cd86; '>(</span>`You have a project<span style='color:#d2cd86; '>,</span> \
+        please contact <span style='color:#e66170; font-weight:bold; '>for</span> remote working<span style='color:#d2cd86; '>.</span>`<span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+</pre></figure>
+<!--
+import { CV } from 'duyetdev-core';
 
 const profile = {
     name : 'Van-Duyet Le',
@@ -108,8 +123,9 @@ CV(profile).then(() => {
     console.log(`You have a project, \
         please contact for remote working.`);
 });
-</pre></figure>
-                    </div>
+-->
+                        
+                        
                 </div>
             </div>
         </div>
@@ -180,38 +196,38 @@ CV(profile).then(() => {
         <div class="container">
             <div class="row">
                 <div class='col-xs-4 col-md-offset-0 col-md-2'>
-                    <a href='https://twitter.com/duyetdev' target='_blank'>
+                    <a href='https://twitter.com/duyetdev' target='_blank' onclick="ga('send', 'event', 'track_mesite_contact', 'click_twitter', 'me.duyetdev.com')">
                         <div class="icon icon-twitter margin-bottom-none-md"></div>
                         <span class="sr-only">duyetdev's Twitter</span>
                     </a>
                 </div>
                 <div class='col-xs-4 col-md-2'>
-                    <a href='https://github.com/duyetdev' target='_blank'>
+                    <a href='https://github.com/duyetdev' target='_blank' onclick="ga('send', 'event', 'track_mesite_contact', 'click_github', 'me.duyetdev.com')">
                         <div class="icon icon-github margin-bottom-none-md"></div>
                         <span class="sr-only">duyetdev's Github Repo</span>
                     </a>
                 </div>
                 <div class='col-xs-4 col-md-2'>
-                    <a href='https://www.linkedin.com/in/duyetdev' target='_blank'>
+                    <a href='https://www.linkedin.com/in/duyetdev' target='_blank' onclick="ga('send', 'event', 'track_mesite_contact', 'click_linkedin', 'me.duyetdev.com')">
                         <div class="icon icon-linkedin margin-bottom-none-md"></div>
                         <span class="sr-only">duyetdev's Linkedin Profile</span>
                     </a>
                 </div>
                 <div class='col-xs-4 col-md-2'>
-                    <a href='https://blog.duyetdev.com' target='_blank'>
+                    <a href='https://blog.duyetdev.com' target='_blank' onclick="ga('send', 'event', 'track_mesite_contact', 'click_blog', 'me.duyetdev.com')">
                         <div class="icon icon-blogger margin-bottom-none-md"></div>
                         <span class="sr-only">Blog</span>
                     </a>
                 </div>
                 <div class='col-xs-4 col-md-2'>
-                    <a href='https://m.me/duyetdev' target='_blank'>
+                    <a href='https://m.me/duyetdev' target='_blank' onclick="ga('send', 'event', 'track_mesite_contact', 'click_fb_messenger', 'me.duyetdev.com')">
                         <div class="icon icon-messenger margin-bottom-none-md"></div>
                         <span class="sr-only">Messenger</span>
                     </a>
                 </div>
 
                 <div class='col-xs-4 col-md-2'>
-                    <a href='https://www.instagram.com/duyetdev/' target='_blank'>
+                    <a href='https://www.instagram.com/duyetdev/' target='_blank' onclick="ga('send', 'event', 'track_mesite_contact', 'click_instagram', 'me.duyetdev.com')">
                         <div class="icon icon-instagram margin-bottom-none-md"></div>
                         <span class="sr-only">Instagram</span>
                     </a>
