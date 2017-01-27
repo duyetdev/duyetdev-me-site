@@ -3593,11 +3593,12 @@ fieldset[disabled] .btn-twitter.active {
 .band {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    border-bottom: 1px solid #ddd
+    border-bottom: 1px solid #ddd;
+    background: #FFF;
 }
 
 .band-inverse {
-    background-color: #eee
+    background-color: #fff;
 }
 
 .highlight pre {
@@ -3852,10 +3853,10 @@ header {
     overflow: hidden;
     position: relative;
     padding: 2rem 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #e4e4e4;
     background-color: #fff;
-    box-shadow: 0 .5rem .5rem -0.5rem rgba(0, 0, 0, 0.15);
-/*     background: no-repeat #fff calc(100% + 772px) calc(100% + 21px) url('https://get.google.com/tagassistant/images/mosaic.png'); */
+    /* box-shadow: 0 .5rem .5rem -0.5rem rgba(0, 0, 0, 0.15); */
+    /*     background: no-repeat #fff calc(100% + 772px) calc(100% + 21px) url('https://get.google.com/tagassistant/images/mosaic.png'); */
     background: no-repeat #fff calc(100% + 0px) calc(100% + 7px) url('https://1.bp.blogspot.com/-5c5PDPgtNHM/WIX_xeQ0HaI/AAAAAAAAig4/_fHXU6yX-OIXJThcE1Ka1dgAiazaGHIaACK4B/s400/tet2017_2.png');
 }
 
